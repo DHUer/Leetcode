@@ -1,4 +1,3 @@
-
 function TreeNode(val) {
     this.val = val;
     this.left = this.right = null;
@@ -9,13 +8,13 @@ function TreeNode(val) {
  * @return {number[][]}
  */
 var levelOrder = function(root) {
-    
+
     let [level, res] = [0, []];
     backTrack(root, level);
     function backTrack(root, level){
         if(root == null) return;
         if(res[level] == null) {
-            res[level] = [];
+	    res[level] = [];
             res[level].push(root.val);
         }else{
             res[level].push(root.val);
@@ -24,8 +23,7 @@ var levelOrder = function(root) {
         backTrack(root.right, level + 1);
     }
     return res;
-};  
-
+};
 var n1 =new TreeNode(1)
 var n2 =new TreeNode(2)
 var n3 =new TreeNode(3)
