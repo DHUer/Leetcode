@@ -17,7 +17,6 @@ var maxProfit = function(prices) {
     return max;
 };
 
-
 let a = [7,1,5,3,6,4,1, 11, 12, 0, 1111];
 let b = [1,1,1,1,1]
 let c = [3,1,1];
