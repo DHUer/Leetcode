@@ -26,6 +26,5 @@ var climbStairs = function(n) {
         twoStepBefore = oneStepBefore
         oneStepBefore = allWay
     }
-
     return allWay
 }
